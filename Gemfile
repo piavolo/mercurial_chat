@@ -29,6 +29,9 @@ gem "jbuilder"
 # SemanticIU CSS framework
 gem 'semantic-ui-sass'
 
+# JQuery JavaScript library
+gem 'jquery-rails'
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", ">= 4.0.1"
 
