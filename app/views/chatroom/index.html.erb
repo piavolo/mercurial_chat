@@ -12,14 +12,16 @@
                 </div>
             </div>
             <div class="extra content">
-                <form class="ui reply form">
+                <%= form_with(model: @message, class: "ui reply form", url: message_path, local: true ) do |f| %>
                     <div class="field">
                         <div class="ui fluid icon input">
-                            <input type="text" placeholder="Enter message...">
-                            <i class="logo-color big paper plane icon"></i>
+                            <%= f.text_field :body %>
+                            <%= button_tag(type: 'submit', class: 'ui button') do %>
+                                <i class="logo-color big paper plane icon"></i>
+                            <% end %>
                         </div>
                     </div>
-                </form>
+                <% end %>
             </div>
         </div>
     </div>
