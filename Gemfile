@@ -32,6 +32,12 @@ gem 'semantic-ui-sass'
 # JQuery JavaScript library
 gem 'jquery-rails'
 
+# Password encryption
+gem 'bcrypt', '~> 3.1', '>= 3.1.20'
+
+# Console DB table better view
+gem 'hirb'
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", ">= 4.0.1"
 
