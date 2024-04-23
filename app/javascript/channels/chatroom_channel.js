@@ -1,5 +1,5 @@
 import consumer from "channels/consumer"
-import { scroll_bottom } from "../application.js";
+import { scroll_bottom } from "../application.js"
 
 consumer.subscriptions.create("ChatroomChannel", {
   connected() {
@@ -14,5 +14,6 @@ consumer.subscriptions.create("ChatroomChannel", {
     // Called when there's incoming data on the websocket for this channel
     $('#message-container').append(data.mod_message);
     scroll_bottom();
+    $("#message_body").val("");
   }
 });
